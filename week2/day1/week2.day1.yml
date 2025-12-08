@@ -1,0 +1,177 @@
+Todays Agenda!!
+================
+   09:45 - 10:00 --> Recap
+   10:00 - 10:45 --> Methods
+   10:45 - 11:00 --> Breakout
+   11:00 - 11:10 --> Break
+   11:10 - 12:00 --> String
+   12:00 - 12:10 --> Breakout
+   12:10 - 12:50 --> String Methods
+   12:50 - 01:00 --> Breakout
+  
+   
+
+
+Method:
+
+*A method in Java is a collection of statements that perform a specific task. Methods are defined 
+within classes and are used to organize code, make it reusable, and promote modular programming.
+
+*A method typically consists of a method signature, which includes the method name, return type,
+ and parameter list, and a method body, which contains the code to be executed when the method is called.
+
+Return Type: Specifies the type of data the method will return, or "void" if it doesn't return anything.
+ Parameters: Input values passed to the method for processing.
+
+//data()-> method
+
+public static void main(String[] agrs){
+
+}
+
+//normal method
+public void data(){
+
+}
+
+//main method
+public  static void main(String[] args){
+
+}
+
+public -Accessmodifier 
+static - common reference
+void -return type
+main -method name
+String[] agrs- input arguments
+
+
+Accesmodifier,returntype,methodName,input arguments
+
+
+Normal method:
+
+Accesmodifier returntype methodname(input arguments){
+    
+}
+
+public void leaftaps(){
+}
+
+Example:
+public class MyClass {
+    // Method definition -> UPI
+    public void printMessage() {
+       syso("hello");
+    }
+
+    // Method with parameters and return type -> Cash 
+    public int addNumbers(int a, int b) {
+        return a + b;
+    }
+
+    public String name(String value){
+        return value;
+    }
+}
+
+
+
+
+ Object:
+
+An object in Java is an instance of a class. A class is a blueprint or a template that defines the 
+structure and behavior of objects. Objects are created based on these class definitions.
+variables ,methods
+
+Objects have attributes (fields or properties) and behaviors (methods). The attributes represent
+ the state of the object, and the methods define the actions or operations that the object can perform.
+
+syntax:
+step 1:
+ClassName objectName=new ClassName();
+
+step 2:
+
+objectName.methodName();
+
+
+String:
+=======
+String is class
+collection of characters
+
+String is immutable--- we cannot changeable
+two types of string declaration
+1.STRING LITERAL
+2.STRING OBJECT
+
+STRING LITERAL
+String company ="TestLeaf";
+
+STRING OBJECT:
+String company=ne String("TestLeaf");
+
+Methods:
+length()--to find 	ho many characters --int
+toCharArray()-- covert string to character array--char[]
+equals("")-- to compare String content--boolean
+equalIgnoreCase()--it ill not compare loercase or uppercase
+contins()--  compare the string ith matching content-- boolean
+CharAt()--character available in the given  position---character
+split("")--split the string based on the given value--string[]
+substring()-- to get the part of the string based on the given position--string 
+replace()-- to replace the existing character with new character--string
+replaceAll()-- to replace the existing character with new character based on the regular expression--string
+toLowerCase()-- convert the string to lowercase--string
+toUpperCase()-- convert the string to uppercase--string
+parseInt()-- convert string to integer--int
+
+
+Arryas:
+=======
+
+what is array?
+
+An array is collection of similar datatypes
+Array index start from '0'
+its fixed data 
+if you not given values to arrya .its waste and we cannot reuse
+
+ex: int[] number={2,4,5,6,7} 
+String[] data={"Java","JS","selenium"}
+
+int[] value={1,'f',"Dilip"}
+
+-------------------------------------------------------------------------------------------------------
+ Arrays:
+ An array in Java is a data structure that allows you to store multiple values of
+ the same data type under a single variable name. Arrays provide a way to efficiently
+ manage and access a collection of elements of the same type. Each element in an 
+ array is identified by an index, starting from 0 for the first element.
+
+ Example: int[] myArray = {1, 2, 3, 4, 5};
+
+array will be work on index value -start from '0'
+
+char[] data ={'a','d','g','c','e','s'}
+starting index -0
+ending index -5
+
+ store all 575 names String={"a","b","c"}
+ String[] name={"","",""}
+ String[] name={"             "}
+
+
+Classroom 1:
+Find the duplicate number in the given Arrays
+int[] input={2,5,3,1,4,5,7,6,3,2}
+
+1.Declare values
+2.get the length of the array 
+3.iterate from 0 to the array length-1 (outer loop starts here)
+4.iterate from i to the length of the array by adding 1 to it (inner loop starts here)
+5.compare both the loop variables & check they're equal
+6.print the matching value
+
+
