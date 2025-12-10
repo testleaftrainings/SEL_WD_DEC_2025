@@ -1,0 +1,113 @@
+
+Week2.day3
+-Select Class (dropdown)
+-Breakout
+-Break
+-Xpath -> Basic xpath
+-Breakout
+-Implicit Wait
+
+DropDown:
+A dropdown is a web element that allows the user to select one or more options from a list of predefined values. 
+In HTML, its usually represented using the <select> tag. 
+In Selenium, we can handle dropdowns using the Select class, which provides methods like 
+ - selectByVisibleText,
+ - selectByValue, 
+ - selectByIndex.
+
+For example, on a registration form, a ‘Country’ field is usually a dropdown 
+where we can choose one option from the list of countries.
+
+
+
+ClassRoom 1:
+https://www.telerik.com/contact
+dp 1-> index 5
+dp 2-> text 'UI for React'
+dp 3-> value 'France'
+Enter -> First name,Last name, Company Name, Business id, phone no and comments.
+
+
+
+Xpath:
+XML Path
+Xpath-XML Path
+
+
+Absolute XPath: It starts from the root (html) and traverses down to the desired element, 
+detailing every single element in the hierarchy. The path starts with a single forward slash /, 
+indicating the root. 
+For example: 
+/html/body/div[2]/div[2]/div/form/p/input
+
+
+Relative XPath: It starts from anywhere within the document and typically focuses on 
+identifying elements based on attributes, indexes, or specific tags, not necessarily 
+detailing the entire path from the root. It starts with a double forward slash //,
+ indicating the search can begin anywhere. 
+ For example: 
+
+
+
+Relative Xpath:
+
+a.Basic xpath
+Attribute based xPath: 
+Syntax: //tagname[@attributename='attributeValue'] 
+Example:  
+
+
+Text based xPath: 
+Syntax: //tagname[text()='textvalue'] 
+Example:  
+
+
+Partial Attribute based xpath: 
+Syntax: //tagname[contains(@attributename,'partialattributevalue')] 
+Example: 
+
+Partial Text based xpath:
+Syntax: //tagname[contains(text(),'partialtextvalue')]
+Example: 
+
+Index based xpath:
+ Syntax: (//tagname[@attributename='attributeValue'])[2]
+(//tagname[text()='textvalue'])[3] 
+Example: 
+(//input[@class='inputLogin'])[2]
+index value should not go beyond 5
+
+(//input[@class='data'])[18]
+
+
+Class Room 2:
+Load Url :https://login.salesforce.com/?locale=in
+Enter username: anburaj.murugesan965@agentforce.com
+Enter password:Test@2025
+Click on Login
+
+
+
+ Wait:
+ Java wait -Thread.sleep(5000); it will wait till time given to be completed
+
+Thread.sleep(3000)
+
+  Selenium wait :
+  1.Implicit wait
+  2.Explicit wait
+
+  Implicit wait :
+  10mins
+
+  at 7mins
+  30sec -element action completed it will to next line 
+  it will not completed 30sec
+
+  driver.findElement(By.id("username")).senKeys("user");
+  thread.sleep(5000);
+
+  but if i am using implicit wait
+
+
+  its common for both findElement() and findElements()
