@@ -1,0 +1,86 @@
+ Agenda:Week3.day2 
+  : Abstraction
+  : Beakout
+  : Break 
+  : Polymorphism
+  : Breakout
+
+
+
+Abstraction:
+Abstraction is a process of hiding the implementation details and showing only functionality to the user. 
+It lets you focus on what the object does instead of how it does it.
+In Java, abstraction is achieved using abstract classes and interfaces.
+
+abstract class Animal {
+    abstract void sound();
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Dog barks");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}
+
+
+
+
+Polymorphism in Java is a concept by which we can perform a single action in different ways.
+It is derived from two Greek words: "poly" and "morphs". "Poly" means many and "morphs" means forms.
+
+Types - compile-time polymorphism - runtime polymorphism. 
+
+Compile-time polymorphism is achieved by method overloading, 
+while runtime polymorphism is achieved by method overriding. 
+- It allows objects of different classes to be treated as objects of a common super class for seamless interaction, typically through the use of method overriding within an inheritance hierarchy. - This enables Java programs to be written more abstractly, promoting scalability and maintainability.
+
+//static ,compile- time,early, method overloading
+
+Overloading: - It refers to the ability to create multiple methods of the same name 
+with different implementations or arguments pass.
+-Calls to an overloaded method will run a specific implementation of that method appropriate 
+to the context, based on the number and type of arguments passed.
+
+
+public void browser(String name){
+
+}
+
+
+public void browser(int version,String name){
+
+}
+
+public void browser(int data,String Value,double x){
+
+}
+
+public void browser(String name,int version){
+
+}
+
+
+
+framework:
+
+pubic void startApp(String url){
+default browser - chrome
+
+}
+
+
+public void startApp(String browser, String url){
+
+} 
+
+
+
