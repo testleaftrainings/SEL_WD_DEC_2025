@@ -1,0 +1,80 @@
+10:00 - 11:15 - windowHandle
+11:15 - 11:25 - Break
+11:25 - 11:50 - Breakout
+11:50 - 12:45 - Webtable
+12:45 - 01:00 - Breakout
+
+Window Handling:
+
+What is a Window Handle?
+
+    A Window Handle is a unique identifier, a string, that Selenium WebDriver assigns to each open window or tab. It acts much like a unique address for a house, allowing WebDriver to navigate to and control a specific window.
+
+Why Window Handles are Important
+            Web applications can open multiple windows or tabs.
+            To perform actions on elements within these windows, Selenium needs to know which window to interact with. - - Window handles enable this by providing a unique ID for each window.
+ 
+
+How to Handle Windows
+
+To handle windows, WebDriver provides two methods:
+
+getWindowHandle(): Retrieves the ID of the current window.
+getWindowHandles(): Retrieves a set of all open windows' IDs.
+
+To switch to a different window, the syntax is driver.switchTo().window(windowHandle); 
+
+where windowHandle is the unique identifier of the target window.
+
+Handling Multiple Windows
+
+1)Retrieve the set of window handles using driver.getWindowHandles().
+
+2)Convert the set to a list to handle windows in a sequential manner.
+
+3)Use the driver.switchTo().window(windowHandle) to switch control to the desired window.
+
+
+After operations are completed, windows can be closed using driver.close(), and control can be switched back to the main window.
+
+
+Exception:
+
+NoSuchWindowException:
+
+
+NoSuchWindowException is an exception which signifies that the action you are trying to perform cannot be completed because the window or tab you are referencing no longer exists or is inaccessible. This can happen for various reasons:
+
+    Window or Tab Closed: If the script attempts to interact with a window or tab that has been closed.
+        Switched Context: If the script has switched to a different window or frame, and attempts to interact with the original window without switching back. To 
+        
+handle this exception, you can:
+
+        Verify that the window or tab you are trying to interact with is open and accessible.
+            Ensure that your script correctly switches to the window or tab before interacting with it.
+
+Webtable:
+A web table is an HTML element that displays data in a tabular format, consisting of rows and columns. Web tables are commonly used on web pages to present structured data, such as lists, records, or any other form of organized information.
+Structure of Web Table:
+A web table is defined using the <table> tag in HTML. It consists of several key      
+components:
+
+    <table>: The main container for the table.
+    <thead>: The table header section, which contains column headers defined by <th> tags.
+    <tbody>: The table body section, which contains the actual data rows defined by <tr> tags.
+    <tr>: Table row, which contains individual cells defined by <td> tags for data and <th> tags for headers.
+    <td>: Table data cell, which holds the actual data values.
+
+How to Locate Web Tables:
+Web tables can be located using various locators in Selenium, such as:  
+    By ID: If the table has a unique ID attribute.
+    By Class Name: If the table has a specific class attribute.
+    By XPath: Using XPath expressions to navigate through the table structure.
+
+Interacting with Web Tables:
+To interact with web tables in Selenium, you can perform the following actions:
+
+    Locate the table element using appropriate locators.
+    Retrieve rows using findElements() on <tr> tags.
+    Iterate through rows and retrieve individual cells using findElements() on <td> tags.
+    Extract and manipulate data as needed.    
